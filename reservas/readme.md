@@ -1,56 +1,56 @@
-# Area de reservas - Descrição do sistema
+# Reservation area - Description
 
 HTML , CSS , JAVASCRIPT , PHP , MYSQL
 
-O sistema consiste em:
+The system consists of:
 
-- PAGINA DE CADASTRO e PAGAMENTO (acessível ao público): https://www.tamarafreitas.com/reservas/
+- REGISTRATION and PAYMENT PAGE (accessible to the public): https://www.tamarafreitas.com/reservas/
 
-  - Uma página informativa com os dados sobre a reserva , preços, recomendações, contra-indicações, etc;
+  - An information page with information about the reservation, prices, recommendations, contraindications, etc.;
 
-  - Formulácom com os campos: NOME , SOBRENOME , DOCUMENTO , EMAIL , TELEFONE , DEISPONIBILIDADE (2 checkbox) , ITEM DA RESERVA (3 checkbox);
+  - Form with the fields: NAME , SURNAME , DOCUMENT , EMAIL , PHONE , AVAILABILITY (2 checkboxes), BOOKING ITEM (3 checkboxes);
 
-  - O sistema deve receber as infromações do formulário, receber o pagamento através da API da plataforma de pagamento (STRIPE) e cadastrar os registros ocupando as vagas disponíveis, nas condições:
+  - The system must receive the form information, receive payment through the payment platform API (STRIPE) and register the records occupying the available vacancies, under the following conditions:
 
-    - Verificar se todos os campos do formulário foram preenchidos corretamente;
-    - Verificar se há vagas disponíveis antes de fazer o cadastro e pagamento;
-    - Impedir duplicidade, verificando se a pessoa já realizou anteriormente um pagamento para o item selecionado (conferindo pelo numero do documento);
-    - Evitar "overbooking" das vagas disponíveis, tomando em conta que o acesso é realizado ao mesmo tempo por milhares de pessoas;
-    - Janelas de diálogo informativo sobre o status do cadastro e confirmação do pagamento;
+    - Check that all form fields have been filled in correctly;
+    - Check if there are vacancies available before registering and paying;
+    - Prevent duplication, checking if the person has previously made a payment for the selected item (checking by document number);
+    - Avoid "overbooking" of available spaces, taking into account that access is performed at the same time by thousands of people;
+    - Information dialog windows about the registration status and payment confirmation;
 
-    - Não é necessário criação de login;
-    - As vagas são separadas por meses (por exemplo: Abril-15vagas Maio-12vagas Junho-7vagas);
-    - Os preços para a reservas são iguais, independente do item e tipo de cliente (pagamento através do sistema);
-    - Os preços finais para cada item é diferente (mas não serão pagos atraves do sistema , serão pagos pessoalmente no momento da realização do serviço);
-    - Os preços dos ites são diferentes para novos clientes e clientes retorno;
+    - It is not necessary to create a login;
+    - The vacancies are separated by months (for example: April-15 vacancies May-12 vacancies June-7 vacancies);
+    - Prices for reservations are the same, regardless of the item and type of customer (payment through the system);
+    - The final prices for each item are different (but they will not be paid through the system, they will be paid in person at the time the service is performed);
+    - Item prices are different for new customers and return customers;
 
-- PAGINA DE CONSULTA (Acessível somente por pessoas autorizadas)
+- CONSULTATION PAGE (Accessible only by authorized persons)
 
-  - O acesso pode ser atraves de uma senha fixa única (não há necessidade de cadastro de usuários);
-  - Listagem do cadastro de reserva com as informações dos registros;
-  - Campo de Pesquisa;
-  - Exportar lista em EXCEL;
+  - Access can be through a single fixed password (no need to register users);
+  - Listing of the reservation register with the information of the registers;
+  - Research field;
+  - Export list in EXCEL;
 
-- O MESMO SISTEMA DEVE SERVIR PARA A REALIZAÇÃO DAS RESERVAS DE NOVOS CLIENTES E PARA CLIENTES DE RETORNO (EM CADASTROS SEPARADOS):
+- THE SAME SYSTEM MUST SERVE FOR RESERVING NEW CUSTOMERS AND RETURN CUSTOMERS (IN SEPARATE REGISTRATIONS):
 
-  - Novos clientes são os que realizarão a compra e o serviço pela primeira vez;
-  - Cliente de retorno são clientes que já realizaram o serviço, e estão retornando para um ajuste/repasso.
-  - A diferença entre clientes novos e retorno não será identificado pelo sistema. Serão abertas, em épocas diferentes, as vagas para cada tipo de cliente separadamente.
+  - New customers are those who will make the purchase and service for the first time;
+  - Returning customers are customers who have already performed the service, and are returning for an adjustment/repair.
+  - The difference between new and returning customers will not be identified by the system. Vacancies will be opened at different times for each type of customer separately.
 
-- SOBRE O PRODUTO (tanto novos quanto retorno):
+- ABOUT THE PRODUCT (both new and returning):
 
-  - ITENS:
+  - ITEMS:
 
-        - Micropigmentação de Sobrancelhas;
-        - Micropigmentação de Labios;
-        - Micropigmentação de Olhos (Eyeliner);
+        - Micropigmentation of eyebrows;
+        - Micropigmentation of Lips;
+        - Eye Micropigmentation (Eyeliner);
 
-  - DISPONIBILIDADE NA AGENDA:
+  - AVAILABILITY IN THE SCHEDULE:
 
-        - Manhãs;
-        - Tardes;
+        - Mornings;
+        - Afternoons;
 
-  - As vagas são separadas por meses (por exemplo: Abril-15vagas Maio-12vagas Junho-7vagas);
-  - Os preços para a reservas são iguais, independente do item e tipo de cliente (pagamento através do sistema);
-  - Os preços finais para cada item é diferente (mas não serão pagos atraves do sistema , serão pagos pessoalmente no momento da realização do serviço);
-  - Os preços dos ites são diferentes para novos clientes e clientes retorno;
+  - The vacancies are separated by months (for example: April-15 vacancies May-12 vacancies June-7 vacancies);
+  - Prices for reservations are the same, regardless of the item and type of customer (payment through the system);
+  - The final prices for each item are different (but they will not be paid through the system, they will be paid in person at the time the service is performed);
+  - Item prices are different for new customers and return customers;
