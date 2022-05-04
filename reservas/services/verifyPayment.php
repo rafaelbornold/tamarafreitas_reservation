@@ -4,8 +4,6 @@ require_once("../config/config.php");
 
 $jsonStr = file_get_contents('php://input');
 
-// $jsonStr = '{"registers":[{"nombre":"Rafael","apellido":"Bornold","nif":"Y7782080K","email":"raffab@gmail.com","telefono":"+34 123 123 123","manana":true,"tarde":false,"procedure":"MicroCejas","condicionBasica":"nuevo","condicionEspecifica":"nuevo","reservationPrice":"50","procedurePrice":"390","ano":"2022","mesNumero":"7","mesNombre":"Julio","paymentStatus":"waiting","clientSecret":"waiting","paymentIntent":"waiting"},{"nombre":"Rafael","apellido":"Bornold","nif":"Y7782080K","email":"raffab@gmail.com","telefono":"+34 123 123 123","manana":true,"tarde":false,"procedure":"MicroLabios","condicionBasica":"nuevo","condicionEspecifica":"nuevo","reservationPrice":"50","procedurePrice":"390","ano":"2022","mesNumero":"7","mesNombre":"Julio","paymentStatus":"waiting","clientSecret":"waiting","paymentIntent":"waiting"},{"nombre":"Rafael","apellido":"Bornold","nif":"Y7782080K","email":"raffab@gmail.com","telefono":"+34 123 123 123","manana":true,"tarde":false,"procedure":"MicroEyeliner","condicionBasica":"nuevo","condicionEspecifica":"nuevo","reservationPrice":"50","procedurePrice":"390","ano":"2022","mesNumero":"7","mesNombre":"Julio","paymentStatus":"waiting","clientSecret":"waiting","paymentIntent":"waiting"}]}';
-
 $jsonObj = json_decode($jsonStr);
 $registers = $jsonObj->registers;
 

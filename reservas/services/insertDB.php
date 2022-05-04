@@ -2,11 +2,7 @@
 
 require_once("../config/config.php");
 
-
 // RECEBENDO DADOS DO JAVASCRIPT
-
-
-// $jsonStr = '{"registers":[{"nombre":"Rafael","apellido":"Bornold","nif":"Y7782080K","email":"raffab@gmail.com","telefono":"+34 123 123 123","manana":true,"tarde":true,"procedure":"MicroCejas","condicionBasica":"repaso","condicionEspecifica":"repaso","reservationPrice":"50","procedurePrice":0,"ano":"2022","mesNumero":"7","mesNombre":"Julio","paymentStatus":"waiting","clientSecret":"pi_3KPn48HlZb6k71EV1lSsm0vo_secret_OTCuFi4STCzqIYk4zsO7BXScf","paymentIntent":"waiting"},{"nombre":"Rafael","apellido":"Bornold","nif":"Y7782080K","email":"raffab@gmail.com","telefono":"+34 123 123 123","manana":true,"tarde":true,"procedure":"MicroLabios","condicionBasica":"repaso","condicionEspecifica":"repaso","reservationPrice":"50","procedurePrice":0,"ano":"2022","mesNumero":"7","mesNombre":"Julio","paymentStatus":"waiting","clientSecret":"pi_3KPn48HlZb6k71EV1lSsm0vo_secret_OTCuFi4STCzqIYk4zsO7BXScf","paymentIntent":"waiting"},{"nombre":"Rafael","apellido":"Bornold","nif":"Y7782080K","email":"raffab@gmail.com","telefono":"+34 123 123 123","manana":true,"tarde":true,"procedure":"MicroEyeliner","condicionBasica":"repaso","condicionEspecifica":"repaso","reservationPrice":"50","procedurePrice":0,"ano":"2022","mesNumero":"7","mesNombre":"Julio","paymentStatus":"waiting","clientSecret":"pi_3KPn48HlZb6k71EV1lSsm0vo_secret_OTCuFi4STCzqIYk4zsO7BXScf","paymentIntent":"waiting"}]}';
 
 $jsonStr = file_get_contents('php://input');
 $jsonObj = json_decode($jsonStr);

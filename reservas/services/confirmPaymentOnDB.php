@@ -4,20 +4,10 @@ require_once("../config/config.php");
 
 // RECEBENDO DADOS DO JAVASCRIPT
 
-//  $jsonStr = '{"confirmPaymentResult":{"paymentIntent":{"id":"pi_3KPntFHlZb6k71EV1xItonJG","object":"payment_intent","amount":15000,"automatic_payment_methods":null,"canceled_at":null,"cancellation_reason":null,"capture_method":"automatic","client_secret":"pi_3KPntFHlZb6k71EV1xItonJG_secret_Y7Vsov0Td2oBo8WDZAtAhl1yr","confirmation_method":"automatic","created":1644066081,"currency":"eur","description":"Hola Rafael (Y7782080K), tu reserva para REPASO de lo(s) procedimiento(s) MICROCEJAS , MICROLABIOS y MICROEYELINER para el mes de JULIO ha sido recibida y procesada correctamente. Me gustaría agradecer tu confianza en mi trabajo, estaré  encantada de recibirte y dejarte aún más guapa. Con un mes de antelación mi secretaría contactará contigo para concretar la cita, si tienes cualquier duda puedes contactar a través del correo electrónico receipts@tamarafreitas.com o a través del whatsapp +34 662 296 124.","last_payment_error":null,"livemode":false,"next_action":null,"payment_method":"pm_1KPntNHlZb6k71EVoZGGq6HZ","payment_method_types":["card"],"processing":null,"receipt_email":"raffab@gmail.com","setup_future_usage":null,"shipping":null,"source":null,"status":"succeeded"}},"registers":[{"nombre":"Rafael","apellido":"Bornold","nif":"Y7782080K","email":"raffab@gmail.com","telefono":"+34 123 123 123","manana":true,"tarde":true,"procedure":"MicroCejas","condicionBasica":"repaso","condicionEspecifica":"repaso","reservationPrice":"50","procedurePrice":0,"ano":"2022","mesNumero":"7","mesNombre":"Julio","paymentStatus":"waiting","clientSecret":"pi_3KPntFHlZb6k71EV1xItonJG_secret_Y7Vsov0Td2oBo8WDZAtAhl1yr","paymentIntent":"waiting"},{"nombre":"Rafael","apellido":"Bornold","nif":"Y7782080K","email":"raffab@gmail.com","telefono":"+34 123 123 123","manana":true,"tarde":true,"procedure":"MicroLabios","condicionBasica":"repaso","condicionEspecifica":"repaso","reservationPrice":"50","procedurePrice":0,"ano":"2022","mesNumero":"7","mesNombre":"Julio","paymentStatus":"waiting","clientSecret":"pi_3KPntFHlZb6k71EV1xItonJG_secret_Y7Vsov0Td2oBo8WDZAtAhl1yr","paymentIntent":"waiting"},{"nombre":"Rafael","apellido":"Bornold","nif":"Y7782080K","email":"raffab@gmail.com","telefono":"+34 123 123 123","manana":true,"tarde":true,"procedure":"MicroEyeliner","condicionBasica":"repaso","condicionEspecifica":"repaso","reservationPrice":"50","procedurePrice":0,"ano":"2022","mesNumero":"7","mesNombre":"Julio","paymentStatus":"waiting","clientSecret":"pi_3KPntFHlZb6k71EV1xItonJG_secret_Y7Vsov0Td2oBo8WDZAtAhl1yr","paymentIntent":"waiting"}]}';
-
-
 $jsonStr = file_get_contents('php://input');
 $jsonObj = json_decode($jsonStr);
 $confirmPaymentResult = $jsonObj->confirmPaymentResult;
 $registers = $jsonObj->registers;
-
-
-// echo('<pre>');
-// print_r($confirmPaymentResult);
-// print_r($registers);
-// echo('</pre>');
-// die();
 
 function setConnection(){ 
             

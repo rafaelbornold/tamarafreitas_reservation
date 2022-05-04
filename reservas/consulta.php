@@ -11,7 +11,6 @@ if ( !isset($_REQUEST['login']) OR $_REQUEST['login'] != "AcessoTamaraFreitas" )
 
 require_once('./config/config.php');
 
-$conexoes = 0;
 function setConnection(){
 
     try {
@@ -24,8 +23,6 @@ function setConnection(){
         die("ERROR 001 - La conexión con el banco de datos ha fallado: " . $e->getMessage());
         }
 
-    global $conexoes;
-    $conexoes += 1;
     return $connection;
 }
 

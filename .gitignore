@@ -10,6 +10,8 @@ stripe_php_keys.php
 # production
 /build
 /public_html
+/videos
+/vendor
 
 # misc
 .DS_Store

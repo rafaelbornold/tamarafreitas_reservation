@@ -35,7 +35,9 @@ function countSelectedProcedures(array $procedures){
         'MicroLabios'         => boolval($form[0]->procLabios), 
         'MicroEyeliner'       => boolval($form[0]->procEyeliner),
 
-    ]; $countSelectedProcedures = countSelectedProcedures($procedures);
+    ]; 
+    
+    $countSelectedProcedures = countSelectedProcedures($procedures);
 
     $period = [
         'ano'             => $form[0]->periodoAno, 
