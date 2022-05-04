@@ -6,17 +6,12 @@
 
 // DADOS DO DATABASE
 
-    // define('SERVER','127.0.0.1:3306'); //hostinger
-    // define('SERVER','sql262.main-hosting.eu'); // hostinger remoto
-    // define('PASSWORD','2mJ/xAm2oKJ'); //hostinger
-
-    define('SERVER','localhost:3306'); //evidalia e local
-    define('PASSWORD','2mJ/xAm2oKJ@!');  //evidalia e local
+    define('SERVER','localhost:3306');
+    define('PASSWORD','2mJ/xAm2oKJ@!');
 
     define('DBNAME','u837310599_TamaraReservas');
     define('USER','u837310599_admReservas');
 
-    define('TABLE_REGISTRATIONS','Reservas');
     define('TABLE_PROCEDURES','Procedimientos');
     define('TABLE_PLAZAS','Plazas');
     define('TABLE_RESERVAS','Reservas');
